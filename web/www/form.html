@@ -1,0 +1,99 @@
+<li class="section_break">
+	<h3>CAGR</h3>
+	<p>Campos referente ao sistema de matrícula</p>
+</li>
+		
+<li id="li_1" >
+    <label class="description" for="element_1">Matrícula </label>
+    <div>
+	    <input id="element_1" name="matricula" class="element text medium" type="text" maxlength="255" value=""/> 
+    </div> 
+</li>		
+
+<li id="li_3" >
+    <label class="description" for="element_3">Senha </label>
+    <div>
+	    <input id="element_3" name="senha" class="element text medium" type="password" maxlength="255" value=""/> 
+    </div> 
+</li>		
+
+<li class="section_break">
+	<h3>Google Agenda</h3>
+	<p>Campos referentes ao sistema de agenda</p>
+</li>
+
+<li id="li_5" >
+    <label class="description" for="element_5">Nome da Agenda </label>
+    <div>
+	    <input id="element_5" name="nome_agenda" class="element text medium" type="text" maxlength="255" value="Aulas"/> 
+    </div>
+    <p class="guidelines" id="guide_5"><small>Nome da agenda para a qual o horário será importado.</small></p> 
+</li>		
+
+<li id="li_6" >
+    <label class="description" for="element_6">Início das Aulas </label>
+    <span>
+	    <input id="element_6_1" name="element_6_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+	    <label for="element_6_1">DD</label>
+    </span>
+    <span>
+	    <input id="element_6_2" name="element_6_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+	    <label for="element_6_2">MM</label>
+    </span>
+    <span>
+	    <input id="element_6_3" name="element_6_3" class="element text" size="4" maxlength="4" value="" type="text">
+	    <label for="element_6_3">YYYY</label>
+    </span>
+
+    <span id="calendar_6">
+	    <img id="cal_img_6" class="datepicker" src="calendar.gif" alt="Pick a date.">	
+    </span>
+    <script type="text/javascript">
+	    Calendar.setup({
+	    inputField	 : "element_6_3",
+	    baseField    : "element_6",
+	    displayArea  : "calendar_6",
+	    button		 : "cal_img_6",
+	    ifFormat	 : "%B %e, %Y",
+	    onSelect	 : selectEuropeDate
+	    });
+    </script>
+ 
+</li>		
+
+<li id="li_7" >
+    <label class="description" for="element_7">Término das Aulas </label>
+    <span>
+        <input id="element_7_1" name="element_7_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+        <label for="element_7_1">DD</label>
+    </span>
+    <span>
+        <input id="element_7_2" name="element_7_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+        <label for="element_7_2">MM</label>
+    </span>
+    <span>
+        <input id="element_7_3" name="element_7_3" class="element text" size="4" maxlength="4" value="" type="text">
+        <label for="element_7_3">YYYY</label>
+    </span>
+
+    <span id="calendar_7">
+        <img id="cal_img_7" class="datepicker" src="calendar.gif" alt="Pick a date.">	
+    </span>
+    <script type="text/javascript">
+        Calendar.setup({
+        inputField	 : "element_7_3",
+        baseField    : "element_7",
+        displayArea  : "calendar_7",
+        button		 : "cal_img_7",
+        ifFormat	 : "%B %e, %Y",
+        onSelect	 : selectEuropeDate
+        });
+    </script>
+</li>
+	
+<li class="buttons">
+    <input type="hidden" name="form_id" value="607819" />
+    
+	<input id="saveForm" class="button_text" type="submit" name="submit" value="Enviar" />
+</li>
+

@@ -1,0 +1,31 @@
+$def with (content)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CAGR2Calendar</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>CAGR2Calendar</a></h1>
+		<form id="form_607819" class="appnitro"  method="POST" action="/">
+            <div class="form_description">
+	            <h2>CAGR2Calendar</h2>
+	            <p>Importe seus horários de aula do sistema CAGR para o serviço de agenda do Google.</p>
+            </div>	
+	
+            $:content
+
+		</form>	
+
+        <div id="about"><a onClick="window.location='/about'">Sobre</a></div>
+	</div>
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
