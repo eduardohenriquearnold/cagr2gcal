@@ -19,11 +19,11 @@ class GCalendar:
     def __init__(self):
         '''Cria objeto necessário para autenticação'''
 
-        self.flow = OAuth2WebServerFlow(client_id='',
-                                   client_secret='',
+        self.flow = OAuth2WebServerFlow(client_id='289003044156-s6v3ku9135p21kpnucpoo5b7cag1v98v.apps.googleusercontent.com',
+                                   client_secret='lHIydBX6KPlgsKlgFDKbezGl',
                                    scope='https://www.googleapis.com/auth/calendar',
-                                   redirect_uri='',
-                                   user_agent='')
+                                   redirect_uri='http://localhost:8080/googleAPI',
+                                   user_agent='CAGR2GoogleCalendar')
 
         # Servidor local de autenticação desabilitado, utilizarei WebPy para isso
         FLAGS.auth_local_webserver = False

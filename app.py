@@ -1,6 +1,11 @@
 #python2
 # -*- coding: utf-8 -*-
 
+#Adiciona path para a biblioteca
+import sys
+sys.path.insert(0, 'lib')
+
+
 import web
 import cagr
 import gcalendar
