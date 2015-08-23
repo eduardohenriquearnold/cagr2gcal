@@ -13,4 +13,4 @@ CAGR2CAlendar
 -Pacotes Python Adicionais Necessários:
     google-python-client-api : Interface com API do Google Calendar
     beautifulsoup4 : Ferramente para ler HTML com mais facilidade
-    webpy : Ferramenta para criar um ambiente WEB para o usuário final
+    Flask : Ferramenta para criar um ambiente WEB para o usuário final

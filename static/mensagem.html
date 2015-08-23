@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<p>{{ msg }}</p>
+
+{% if lnk %}
+<input id="saveForm" class="button_text" type="button" name="submit" value="OK" onclick="window.location='{{ lnk }}'" />
+{% else %}
+<input id="saveForm" class="button_text" type="button" name="submit" value="OK" onclick="window.location=window.history.back()" />
+{% endif %}
+
+{% endblock %}
